@@ -1,43 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatiable" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="App.css">
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+      <a href="#skils">Skils</a>
+       <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello It's Me</h3>
+        <h1>Vijayalakshmi B</h1>
+        <h3>And I'm a <span> Frontend Developer</span></h3>
+        <p>As an aspiring frontend developer, I bring a solid foundation in HTML, CSS, and JavaScript along with a keen eye for design, aiming to create captivating and seamless user interfaces. Eager to contribute fresh perspectives and collaborate effectively within multidisciplinary teams to deliver engaging web experiences.</p>
+        <div class="social-media">
+          <a href="github.com/vlakshmi2003"><i class='bx bxl-github'></i></a>
+          <a href="linkedin.com/in/vijaya-lakshmi-b-b38691261"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        <a href="https://novoresume.com/editor/resume/ab2ee390-3393-11ee-8397-13a3ce52dfb5" class="btn">Download CV</a>
+      </div>
+      <div class="home-img">
+        <img src="images/Laptop.jpg" alt="">
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/laptop2.avif" alt="">
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Frontend Develper</h3>
+        <p>
+          I am vijayalakshmi Contionusly Learning Frontend Developer.
+         I'm an enthusiastic and aspiring frontend developer, passionate about crafting immersive digital experiences. With a strong grasp of HTML, CSS, and JavaScript, I'm dedicated to transforming innovative design concepts into user-friendly and visually appealing interfaces. Eager to embark on a journey of continuous learning and collaboration to create impactful web solutions.
+        </p>
+        <a href="#" class="btn">Read more</a>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Project</span></h2>
+      <div class="portfolio-container">
+      <!-- <div class="portfolio-box">
+        <img src="images/counter.png" alt="">
+        <div class="portfolio-layer">
+          <h4>Counter App</h4>
+          <p>"Created a responsive counter app with ReactJS, highlighting
+            expertise in component-based UI development and state manipulatio for real-time user</p>
+            <p>
+              <a href="#"><i class='bx bx-link-external' ></i></a>
+            </p>
+        </div>
+      </div> -->
+      <div class="portfolio-box">
+        <img src="images/Login.png" alt="">
+        <div class="portfolio-layer">
+          <h4>Login page</h4>
+          <p>login page featuring a secure and responsive login page for user authentication</p>
+            <p>
+              <a href="#"><i class='bx bx-link-external' ></i></a>
+            </p>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="images/Tables.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Data Table</h4>
+          <p>"ReactJS project involving tables for managing user, password, ,
+            log data."</p>
+            <p>
+              <a href="#"><i class='bx bx-link-external' ></i></a>
+            </p>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="images/snake game.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Snake game</h4>
+          <p>A classic Snake game implemented using ReactJS, offering a nostalgic gaming experience with modern web development.</p>
+            <p>
+              <a href="#"><i class='bx bx-link-external' ></i></a>
+            </p>
+        </div>
+      </div>
+    </div>
+    <section class="skils" id="skils">
+      <h2 class="heading">skills <span>I have</span></h2>
+      <div class="app">
+        <i class='bx bxl-html5'></i>
+        <i class='bx bxl-javascript'></i>
+        <i class='bx bxl-css3' ></i>
+        <i class='bx bxl-react'></i>
+        <i class='bx bxl-visual-studio'></i>
+      </div>
+    </section>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Fullname">
+          <input type="email" placeholder="Email address">
+          </div>
+          <div class="input-box">
+          <input type="Number" placeholder="Mobile number">
+          <input type="text" placeholder="Email subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+        <input type="submit" value="Send message" class="btn">
+      </form>
+    </section>
+   <footer class="footer">
+    <div class="footer-text">
+      <p>Copyrights &copy; 2023 by Vijayalaksmi | All rights Reserved</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+   </footer>
   </body>
 </html>
